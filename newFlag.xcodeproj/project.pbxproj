@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39DC85637AD3666F7E5AE7F7 /* Pods_newFlag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90DFD3DF7110FFD7A52FCBA /* Pods_newFlag.framework */; };
 		F32873451F1D98B600A69751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32873441F1D98B600A69751 /* AppDelegate.swift */; };
 		F32873471F1D98B600A69751 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32873461F1D98B600A69751 /* GameViewController.swift */; };
 		F328734A1F1D98B600A69751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32873481F1D98B600A69751 /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A24767A1FB359191A13CED7 /* Pods-newFlag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlag.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlag/Pods-newFlag.release.xcconfig"; sourceTree = "<group>"; };
+		8CB16A62FA5242621039DFB6 /* Pods-newFlag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newFlag/Pods-newFlag.debug.xcconfig"; sourceTree = "<group>"; };
+		C90DFD3DF7110FFD7A52FCBA /* Pods_newFlag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newFlag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32873411F1D98B600A69751 /* newFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32873441F1D98B600A69751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32873461F1D98B600A69751 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DC85637AD3666F7E5AE7F7 /* Pods_newFlag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E5DFE6906FC96539DCCE06B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90DFD3DF7110FFD7A52FCBA /* Pods_newFlag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA932CC292B9123CB7E233C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB16A62FA5242621039DFB6 /* Pods-newFlag.debug.xcconfig */,
+				4A24767A1FB359191A13CED7 /* Pods-newFlag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F32873381F1D98B600A69751 = {
 			isa = PBXGroup;
 			children = (
 				F32873431F1D98B600A69751 /* newFlag */,
 				F32873421F1D98B600A69751 /* Products */,
+				ADA932CC292B9123CB7E233C /* Pods */,
+				0E5DFE6906FC96539DCCE06B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F32873531F1D98B600A69751 /* Build configuration list for PBXNativeTarget "newFlag" */;
 			buildPhases = (
+				F97523F8FE1F64905E9C425E /* [CP] Check Pods Manifest.lock */,
 				F328733D1F1D98B600A69751 /* Sources */,
 				F328733E1F1D98B600A69751 /* Frameworks */,
 				F328733F1F1D98B600A69751 /* Resources */,
+				72176E677FAE72863E03D09E /* [CP] Embed Pods Frameworks */,
+				5E3452109D7D2830757B4E2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,7 @@
 				TargetAttributes = {
 					F32873401F1D98B600A69751 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QKH95T8Q94;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,6 +199,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E3452109D7D2830757B4E2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-newFlag/Pods-newFlag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72176E677FAE72863E03D09E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-newFlag/Pods-newFlag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97523F8FE1F64905E9C425E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F328733D1F1D98B600A69751 /* Sources */ = {
@@ -304,8 +380,10 @@
 		};
 		F32873541F1D98B600A69751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB16A62FA5242621039DFB6 /* Pods-newFlag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QKH95T8Q94;
 				INFOPLIST_FILE = newFlag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = allraw.com.foever.newFlag;
@@ -316,8 +394,10 @@
 		};
 		F32873551F1D98B600A69751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A24767A1FB359191A13CED7 /* Pods-newFlag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QKH95T8Q94;
 				INFOPLIST_FILE = newFlag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = allraw.com.foever.newFlag;

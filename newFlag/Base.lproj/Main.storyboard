@@ -22,39 +22,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-ow-gZx">
-                                <rect key="frame" x="65" y="64" width="245" height="230"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-ow-gZx">
+                                <rect key="frame" x="65" y="64" width="245" height="269"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-JJ-UUe" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="75" y="0.0" width="95.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lhb-hv-6cs">
-                                        <rect key="frame" x="0.0" y="0.0" width="245" height="50"/>
+                                        <rect key="frame" x="0.0" y="39" width="245" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-XL-3j0">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-XL-3j0">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eYb-XL-3j0" secondAttribute="height" multiplier="3:2" id="Nlu-uW-m6l"/>
                                                     <constraint firstAttribute="height" constant="50" id="g3R-HQ-gmb"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1x-bD-FYL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-vd-f6t">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-vd-f6t">
                                                 <rect key="frame" x="85" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="k5W-vd-f6t" secondAttribute="height" multiplier="3:2" id="FFI-rJ-8Ot"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qsf-Bj-F6u"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-7l-j1y">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU9-7l-j1y">
                                                 <rect key="frame" x="170" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RU9-7l-j1y" secondAttribute="height" multiplier="3:2" id="G74-YG-FiA"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oer-Oz-5mT"/>
                                                 </connections>
@@ -67,35 +73,35 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DbS-Fl-9aL">
-                                        <rect key="frame" x="0.0" y="60" width="245" height="50"/>
+                                        <rect key="frame" x="0.0" y="99" width="245" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-Nx-N9A">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaa-Nx-N9A">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yaa-Nx-N9A" secondAttribute="height" multiplier="3:2" id="k1J-Id-dZP"/>
                                                     <constraint firstAttribute="height" constant="50" id="kIS-AI-iWX"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPf-IE-5nq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-jk-GmQ">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-jk-GmQ">
                                                 <rect key="frame" x="85" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HJF-jk-GmQ" secondAttribute="height" multiplier="3:2" id="6zh-P9-HaY"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nl0-zU-QLt"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-fd-Brd">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-fd-Brd">
                                                 <rect key="frame" x="170" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vcd-fd-Brd" secondAttribute="height" multiplier="3:2" id="elM-fm-OEw"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9K8-n7-8Q3"/>
                                                 </connections>
@@ -108,35 +114,35 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-B3-DmE">
-                                        <rect key="frame" x="0.0" y="120" width="245" height="50"/>
+                                        <rect key="frame" x="0.0" y="159" width="245" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-tt-dCm">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-tt-dCm">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="AwE-aC-A4e"/>
                                                     <constraint firstAttribute="width" secondItem="nUO-tt-dCm" secondAttribute="height" multiplier="3:2" id="MdM-vf-Mfo"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEB-sA-URi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaa-iU-4QE">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaa-iU-4QE">
                                                 <rect key="frame" x="85" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iaa-iU-4QE" secondAttribute="height" multiplier="3:2" id="O6O-7R-9jd"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kll-AD-5wg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-g7-WQt">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-g7-WQt">
                                                 <rect key="frame" x="170" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wqf-g7-WQt" secondAttribute="height" multiplier="3:2" id="i4P-Ig-OuW"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhx-4D-dF6"/>
                                                 </connections>
@@ -149,35 +155,35 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kf4-Vy-tT1">
-                                        <rect key="frame" x="0.0" y="180" width="245" height="50"/>
+                                        <rect key="frame" x="0.0" y="219" width="245" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3X-Pc-xaq">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3X-Pc-xaq">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="u3X-Pc-xaq" secondAttribute="height" multiplier="3:2" id="2Jh-aG-I1B"/>
                                                     <constraint firstAttribute="height" constant="50" id="7b2-Fn-1e0"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l40-Cr-bG2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feX-VE-rKf">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feX-VE-rKf">
                                                 <rect key="frame" x="85" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="feX-VE-rKf" secondAttribute="height" multiplier="3:2" id="aRh-zZ-B8g"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcr-CN-iU2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-Yn-tOT">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-Yn-tOT">
                                                 <rect key="frame" x="170" y="0.0" width="75" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sEv-Yn-tOT" secondAttribute="height" multiplier="3:2" id="rxB-m4-Sq4"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="cardBack"/>
+                                                <state key="normal" image="cardBack"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Hy-36-kPI"/>
                                                 </connections>
@@ -191,21 +197,34 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="144" y="347" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="New Game"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="1" green="0.37694599239999999" blue="0.1801723056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E81-al-HN0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33770513003645597" green="1" blue="0.82661296369237358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bUa-ow-gZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLT-AN-jKM"/>
                             <constraint firstItem="bUa-ow-gZx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="tCF-3c-MWt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="burnLabel" destination="PKH-JJ-UUe" id="HlH-Zn-Wap"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
