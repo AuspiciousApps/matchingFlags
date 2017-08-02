@@ -48,6 +48,7 @@ struct Game  {
     mutating func newGame() {
         ///
         shuffle()
+        deckOfCards.drawCards()
     }
 
         mutating func cardFlip() {

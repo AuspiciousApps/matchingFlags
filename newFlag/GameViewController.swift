@@ -28,24 +28,31 @@ class GameViewController: UIViewController, MatchingGameDelegate {
         if   game.flipCard(atIndexNumber: tagNum - 1){
             let thisImage = UIImage(named: game.deckOfCards.deltCards[tagNum - 1])
            //sender.setImage(thisImage, for: .normal)
-            UIView.transition(with: sender, duration: 1.0, options: .transitionFlipFromRight, animations: { sender.setImage(thisImage, for: .normal)}, completion: nil)
+            UIView.transition(with: sender, duration: 0.4, options: .transitionFlipFromRight, animations: { sender.setImage(thisImage, for: .normal)}, completion: nil)
        
        // game.speakCard(number: tagNum - 1)
      
         }
     }
     @IBAction func newGame(_ sender: UIButton) {
+        
        
         for tagNum in 1...12{
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
             
-                thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)
+                //thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)
+                UIView.transition(with: thisButton, duration: 0.2, options: .transitionFlipFromTop, animations: { thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)}, completion: nil)
             }
         }
-        game.deckOfCards.drawCards()
+        
         gameNum += 1
         burnLabel.text = "Game #\(gameNum)"
         game.newGame()
+        
+        //sender.setImage(thisImage, for: .normal)
+        
+        
+
     }
     func game(_ game: Game, hideCards cards: [Int]) {
         for cardIndex in cards {
