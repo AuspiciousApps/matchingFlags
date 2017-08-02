@@ -9,11 +9,13 @@
 import UIKit
 import LTMorphingLabel
 
+
 class GameViewController: UIViewController, MatchingGameDelegate {
+    
     
     @IBOutlet weak var burnLabel: LTMorphingLabel!
     @IBOutlet weak var cardButton: UIButton!
-
+ 
    var game = Game()//instanciating a struct..(make a object)
    var gameNum = 1
     override func viewDidLoad() {
@@ -27,12 +29,13 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             let thisImage = UIImage(named: game.deckOfCards.deltCards[tagNum - 1])
            //sender.setImage(thisImage, for: .normal)
             UIView.transition(with: sender, duration: 1.0, options: .transitionFlipFromRight, animations: { sender.setImage(thisImage, for: .normal)}, completion: nil)
-        
-        
-        game.speakCard(number: tagNum - 1)
+       
+       // game.speakCard(number: tagNum - 1)
+     
         }
     }
     @IBAction func newGame(_ sender: UIButton) {
+       
         for tagNum in 1...12{
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
             
@@ -42,6 +45,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
         game.deckOfCards.drawCards()
         gameNum += 1
         burnLabel.text = "Game #\(gameNum)"
+        game.newGame()
     }
     func game(_ game: Game, hideCards cards: [Int]) {
         for cardIndex in cards {
@@ -51,6 +55,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             }
         }
     }
+        
 //    let thisImage = UIImage(named: nameList[tagNum - 1])
 //    thisButton.setBackgroundImage(thisImage, for: .normal)
     

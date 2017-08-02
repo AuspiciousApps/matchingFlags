@@ -13,6 +13,8 @@
 		F328734A1F1D98B600A69751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32873481F1D98B600A69751 /* Main.storyboard */; };
 		F328734C1F1D98B600A69751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F328734B1F1D98B600A69751 /* Assets.xcassets */; };
 		F328734F1F1D98B600A69751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F328734D1F1D98B600A69751 /* LaunchScreen.storyboard */; };
+		F36EA3981F31717B0080C11F /* card-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F36EA3961F31717B0080C11F /* card-flip.mp3 */; };
+		F36EA3991F31717B0080C11F /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = F36EA3971F31717B0080C11F /* shuffle.wav */; };
 		F3723D011F2035D30094AB16 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3723D001F2035D30094AB16 /* File.swift */; };
 		F3723D071F204F4C0094AB16 /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3723D061F204F4C0094AB16 /* DeckOfCards.swift */; };
 		F3723D091F2054280094AB16 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3723D081F2054280094AB16 /* Game.swift */; };
@@ -29,6 +31,8 @@
 		F328734B1F1D98B600A69751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F328734E1F1D98B600A69751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32873501F1D98B600A69751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36EA3961F31717B0080C11F /* card-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "card-flip.mp3"; path = "../../../../Desktop/memory-sounds/card-flip.mp3"; sourceTree = "<group>"; };
+		F36EA3971F31717B0080C11F /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = shuffle.wav; path = "../../../../Desktop/memory-sounds/shuffle.wav"; sourceTree = "<group>"; };
 		F3723D001F2035D30094AB16 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../File.swift; sourceTree = "<group>"; };
 		F3723D061F204F4C0094AB16 /* DeckOfCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
 		F3723D081F2054280094AB16 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		F3723D041F2038190094AB16 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F36EA3961F31717B0080C11F /* card-flip.mp3 */,
+				F36EA3971F31717B0080C11F /* shuffle.wav */,
 				F328734B1F1D98B600A69751 /* Assets.xcassets */,
 			);
 			name = Assets;
@@ -193,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F328734F1F1D98B600A69751 /* LaunchScreen.storyboard in Resources */,
+				F36EA3981F31717B0080C11F /* card-flip.mp3 in Resources */,
 				F328734C1F1D98B600A69751 /* Assets.xcassets in Resources */,
 				F328734A1F1D98B600A69751 /* Main.storyboard in Resources */,
+				F36EA3991F31717B0080C11F /* shuffle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

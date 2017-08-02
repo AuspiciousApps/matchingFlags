@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-ow-gZx">
-                                <rect key="frame" x="65" y="64" width="245" height="269"/>
+                                <rect key="frame" x="65" y="64" width="245" height="309"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-JJ-UUe" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
                                         <rect key="frame" x="75" y="0.0" width="95.5" height="29"/>
@@ -168,16 +168,24 @@
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l40-Cr-bG2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feX-VE-rKf">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VcH-a6-wf1">
                                                 <rect key="frame" x="85" y="0.0" width="75" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feX-VE-rKf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="feX-VE-rKf" secondAttribute="height" multiplier="3:2" id="aRh-zZ-B8g"/>
+                                                        </constraints>
+                                                        <state key="normal" image="cardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcr-CN-iU2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="feX-VE-rKf" secondAttribute="height" multiplier="3:2" id="aRh-zZ-B8g"/>
+                                                    <constraint firstItem="feX-VE-rKf" firstAttribute="width" secondItem="feX-VE-rKf" secondAttribute="height" multiplier="3:2" id="7C7-mA-J5e"/>
                                                 </constraints>
-                                                <state key="normal" image="cardBack"/>
-                                                <connections>
-                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcr-CN-iU2"/>
-                                                </connections>
-                                            </button>
+                                            </stackView>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEv-Yn-tOT">
                                                 <rect key="frame" x="170" y="0.0" width="75" height="50"/>
                                                 <constraints>
@@ -192,29 +200,27 @@
                                         <constraints>
                                             <constraint firstItem="sEv-Yn-tOT" firstAttribute="width" secondItem="sEv-Yn-tOT" secondAttribute="height" multiplier="3:2" id="UPW-J2-zTf"/>
                                             <constraint firstItem="sEv-Yn-tOT" firstAttribute="width" secondItem="sEv-Yn-tOT" secondAttribute="height" multiplier="3:2" id="YQ0-a3-gLl"/>
-                                            <constraint firstItem="feX-VE-rKf" firstAttribute="width" secondItem="feX-VE-rKf" secondAttribute="height" multiplier="3:2" id="xbr-uM-Air"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb" customClass="PMSuperButton" customModule="PMSuperButton">
+                                        <rect key="frame" x="85" y="279" width="75" height="30"/>
+                                        <state key="normal" title="New Game">
+                                            <color key="titleColor" red="1" green="0.37694599239999999" blue="0.1801723056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E81-al-HN0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="144" y="347" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="New Game">
-                                    <color key="titleColor" red="1" green="0.37694599239999999" blue="0.1801723056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E81-al-HN0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.33770513003645597" green="1" blue="0.82661296369237358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
