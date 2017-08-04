@@ -8,7 +8,6 @@
 
 import Foundation
 import AVFoundation
-
 protocol MatchingGameDelegate {
     func game(_ game: Game, hideCards cards:[Int])
     
@@ -19,26 +18,46 @@ struct Game  {
     var deckOfCards = DeckOfCards()
     let synthesizer = AVSpeechSynthesizer()
     var gameDelegate: MatchingGameDelegate?
+    var noFlipWhileWait = false
     var unmatchedCardsRevealed: [Int] = []
+    var matchArray: [Int] = []
+    
+    
+    init() {
+        newGame()
+    }
+
     mutating func flipCard(atIndexNumber index: Int) ->Bool{
+        
+        if noFlipWhileWait {return false}
+        if !unmatchedCardsRevealed.isEmpty && unmatchedCardsRevealed[0] == index{return false}// this unmatced card has already been revealed
+        if !matchArray.contains(index){return false} //card has alread been matched
         if unmatchedCardsRevealed.count < 2 {
             
             unmatchedCardsRevealed.append(index)
             
             if unmatchedCardsRevealed.count == 2  {
+             
                 let card1Name = deckOfCards.deltCards[unmatchedCardsRevealed[0]]
                 let card2Name = deckOfCards.deltCards[unmatchedCardsRevealed[1]]
                 if card1Name == card2Name {
                     print("match!!!!")
-                    
+                    for (indexCounter, cardIndexValue) in matchArray.enumerated().reversed(){
+                        if cardIndexValue == unmatchedCardsRevealed[0] || cardIndexValue == unmatchedCardsRevealed[1]{
+                            matchArray.remove(at: indexCounter)
+                        }
+                    }
                     speakCard(number: index)
+                    unmatchedCardsRevealed.removeAll()
+                    
+                } else {
+                    resetUnmatchedCards()
                 }
-                
             }
             cardFlip()
                 return true
             }else {
-                resetUnmatchedCards()
+            print("Error: This should Never be here")
                 return false
             }
             
@@ -49,6 +68,9 @@ struct Game  {
         ///
         shuffle()
         deckOfCards.drawCards()
+        for (index, _) in deckOfCards.deltCards.enumerated() {
+            matchArray.append(index)
+        }
     }
 
         mutating func cardFlip() {
@@ -76,6 +98,7 @@ struct Game  {
     
         
         mutating func resetUnmatchedCards() {
+            noFlipWhileWait = true
             self.gameDelegate?.game(self, hideCards: unmatchedCardsRevealed)
             unmatchedCardsRevealed.removeAll()
         }

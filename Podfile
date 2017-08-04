@@ -8,4 +8,5 @@ target 'newFlag' do
   # Pods for newFlag
 pod 'PMSuperButton', '~> 1.0'
 pod 'LTMorphingLabel', '~> 0.5'
+pod 'MZTimerLabel', '~> 0.5'
 end
