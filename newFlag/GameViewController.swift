@@ -33,6 +33,9 @@ class GameViewController: UIViewController, MatchingGameDelegate {
          stopWatch = MZTimerLabel.init(label: timerLabel)
         stopWatch.timeFormat = "mm:ss SS"
         stopWatch.start()
+     
+            
+        
     }
     @IBAction func cardTapped(_ sender: UIButton) {
         let tagNum = sender.tag
@@ -42,7 +45,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             UIView.transition(with: sender, duration: 0.4, options: .transitionFlipFromRight, animations: { sender.setImage(thisImage, for: .normal)}, completion: nil)
             
             // game.speakCard(number: tagNum - 1)
-            
+            displayGameOver()
         }
     }
     @IBAction func newGame(_ sender: UIButton) {
@@ -60,6 +63,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
         burnLabel.text = "Game #\(gameNum)"
         game.newGame()
         stopWatch.reset()
+        stopWatch.start()
         //sender.setImage(thisImage, for: .normal)
         
         
@@ -75,6 +79,13 @@ class GameViewController: UIViewController, MatchingGameDelegate {
                 }
             }
             self.game.noFlipWhileWait = false
+        }
+    }
+    func displayGameOver() {
+        if game.matchArray.isEmpty {
+            burnLabel.text = "GAME OVER WINNER"
+            stopWatch.pause()
+            
         }
     }
     //    let thisImage = UIImage(named: nameList[tagNum - 1])

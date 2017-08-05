@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39DC85637AD3666F7E5AE7F7 /* Pods_newFlag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90DFD3DF7110FFD7A52FCBA /* Pods_newFlag.framework */; };
+		F30CD5AE1F355FE100A42B24 /* complete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F30CD5AD1F355FE100A42B24 /* complete.mp3 */; };
 		F32873451F1D98B600A69751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32873441F1D98B600A69751 /* AppDelegate.swift */; };
 		F32873471F1D98B600A69751 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32873461F1D98B600A69751 /* GameViewController.swift */; };
 		F328734A1F1D98B600A69751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32873481F1D98B600A69751 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		4A24767A1FB359191A13CED7 /* Pods-newFlag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlag.release.xcconfig"; path = "Pods/Target Support Files/Pods-newFlag/Pods-newFlag.release.xcconfig"; sourceTree = "<group>"; };
 		8CB16A62FA5242621039DFB6 /* Pods-newFlag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newFlag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newFlag/Pods-newFlag.debug.xcconfig"; sourceTree = "<group>"; };
 		C90DFD3DF7110FFD7A52FCBA /* Pods_newFlag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newFlag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30CD5AD1F355FE100A42B24 /* complete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = complete.mp3; path = ../../../../Desktop/complete.mp3; sourceTree = "<group>"; };
 		F32873411F1D98B600A69751 /* newFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32873441F1D98B600A69751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32873461F1D98B600A69751 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		F3723D041F2038190094AB16 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F30CD5AD1F355FE100A42B24 /* complete.mp3 */,
 				F36EA3961F31717B0080C11F /* card-flip.mp3 */,
 				F36EA3971F31717B0080C11F /* shuffle.wav */,
 				F328734B1F1D98B600A69751 /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F328734F1F1D98B600A69751 /* LaunchScreen.storyboard in Resources */,
+				F30CD5AE1F355FE100A42B24 /* complete.mp3 in Resources */,
 				F36EA3981F31717B0080C11F /* card-flip.mp3 in Resources */,
 				F328734C1F1D98B600A69751 /* Assets.xcassets in Resources */,
 				F328734A1F1D98B600A69751 /* Main.storyboard in Resources */,
