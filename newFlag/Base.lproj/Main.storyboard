@@ -23,11 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-ow-gZx">
-                                <rect key="frame" x="65" y="64" width="245" height="369.5"/>
+                                <rect key="frame" x="65" y="64" width="245" height="371.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-JJ-UUe" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                        <rect key="frame" x="75" y="0.0" width="95.5" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <rect key="frame" x="73.5" y="0.0" width="98" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -202,14 +202,17 @@
                                             <constraint firstItem="sEv-Yn-tOT" firstAttribute="width" secondItem="sEv-Yn-tOT" secondAttribute="height" multiplier="3:2" id="YQ0-a3-gLl"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb" customClass="PMSuperButton" customModule="PMSuperButton">
-                                        <rect key="frame" x="85" y="304" width="75" height="30"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-AI-ixb" customClass="PMSuperButton" customModule="PMSuperButton">
+                                        <rect key="frame" x="73.5" y="304" width="98" height="32"/>
+                                        <color key="backgroundColor" red="1" green="0.99950684540000001" blue="0.099316516830000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="7" minY="6" maxX="7" maxY="5"/>
                                         <state key="normal" title="New Game">
-                                            <color key="titleColor" red="1" green="0.37694599239999999" blue="0.1801723056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.104540258" blue="0.1038408465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="5"/>
@@ -219,8 +222,8 @@
                                             <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E81-al-HN0"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-kS-ZHQ">
-                                        <rect key="frame" x="99.5" y="349" width="46" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-kS-ZHQ" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="99.5" y="351" width="46" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -228,7 +231,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.33770513003645597" green="1" blue="0.82661296369237358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.104540258" blue="0.1038408465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bUa-ow-gZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLT-AN-jKM"/>
                             <constraint firstItem="bUa-ow-gZx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="tCF-3c-MWt"/>

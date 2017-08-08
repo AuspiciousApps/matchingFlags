@@ -16,25 +16,26 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     @IBOutlet weak var burnLabel: LTMorphingLabel!
     @IBOutlet weak var cardButton: UIButton!
     
-    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var timerLabel: LTMorphingLabel!
     
     
     
     
     var stopWatch: MZTimerLabel!
-   
+    
     var game = Game()//instanciating a struct..(make a object)
     var gameNum = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         game.gameDelegate = self
         burnLabel.morphingEffect = .burn
+        timerLabel.morphingEffect = .burn
         //game.newGame()
-         stopWatch = MZTimerLabel.init(label: timerLabel)
-        stopWatch.timeFormat = "mm:ss SS"
+        stopWatch = MZTimerLabel.init(label: timerLabel)
+        stopWatch.timeFormat = "mm:ss"
         stopWatch.start()
-     
-            
+        
+        
         
     }
     @IBAction func cardTapped(_ sender: UIButton) {
@@ -55,10 +56,15 @@ class GameViewController: UIViewController, MatchingGameDelegate {
             if let thisButton = self.view.viewWithTag(tagNum) as? UIButton {
                 
                 //thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)
-                UIView.transition(with: thisButton, duration: 0.2, options: .transitionFlipFromTop, animations: { thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)}, completion: nil)
+                UIView.transition(with: thisButton, duration: 0.2, options: [.transitionFlipFromTop, .repeat] , animations: { thisButton.setImage(#imageLiteral(resourceName: "cardBack"), for: .normal)}, completion: nil)
+                
+                let delayTime = DispatchTime.now() + 0.5
+                DispatchQueue.main.asyncAfter(deadline: delayTime) {
+                    
+                    thisButton.layer.removeAllAnimations()
+                }
             }
         }
-        
         gameNum += 1
         burnLabel.text = "Game #\(gameNum)"
         game.newGame()
@@ -96,7 +102,7 @@ class GameViewController: UIViewController, MatchingGameDelegate {
     //        deltCards = nameList
     //        //nameList = shuffle(nameList)
     //       deltCards.shuffle()
-    //        
+    //
     //    }
     
     //highlight then command /
