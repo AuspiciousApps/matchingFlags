@@ -9,7 +9,7 @@
 import Foundation
 
 struct DeckOfCards {
-    var nameList = ["Anguilla","Antigua and Barbuda","Aruba","Bahamas","Barbados","Belize","Bermuda","Bonaire","British Virgin Islands","Canada","Cayman Islands","Costa Rica","Cuba","Curacao","Dominica","Dominican Republic","El Salvador","Greenland","Grenada","Guadeloupe","Guatemala","Haiti","Honduras","Jamaica","Martinique","Mexico","Montserrat" ]
+    var nameList = ["Anguilla","Antigua and Barbuda","Aruba","Bahamas","Barbados","Belize","Bermuda","Bonaire","British Virgin Islands","Canada","Cayman Islands","Costa Rica","Cuba","Curacao","Dominica","Dominican Republic","El Salvador","Greenland","Grenada","Guadeloupe","Guatemala","Haiti","Honduras","Jamaica","Martinique","Mexico","Montserrat","Navassa Island","Nicaragua","Panama","Puerto Rico","Saba","Saint Barthelemy","Saint Kitts and Nevis","Saint Lucia","Saint Martin","Saint Pierre and Miquelon","Saint Vincent and the Grenadines","Sint Eustatius.png","Sint Maarten ","Trinidad and Tobago","Turks and Caicos Islands","US Virgin Islands","USA"]
     var deltCards : [String] = []
     let numberOfMatches = 6
     init() {
